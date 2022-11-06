@@ -8,14 +8,14 @@
 群1077223830
 *******************************
 [rewrite_local]
-^http[s]?:\/\/vip7.fzwdyy.cn\/api\/getAdvertInfo.+$ url script-response-body fzwdyy.js
+^http[s]?:\/\/vip7.fzwdyy.cn\/api\/getAdvertInfo.+$ url script-response-body 555ad.js
 [mitm] 
 hostname = *.fzwdyy.*
 *******************************
 Surge
 
 [Script]
-^http[s]?:\/\/vip7.fzwdyy.cn\/api\/getAdvertInfo.+$ requires-body=1,max-size=0,script-path=fzwdyy.js
+^http[s]?:\/\/vip7.fzwdyy.cn\/api\/getAdvertInfo.+$ requires-body=1,max-size=0,script-path=555ad.js
 
 [MITM]
 hostname = *.fzwdyy.*
